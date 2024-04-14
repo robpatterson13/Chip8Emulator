@@ -11,6 +11,9 @@
 		7CBBB07A2BC742470043589A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBB0792BC742470043589A /* ContentView.swift */; };
 		7CBBB07C2BC742480043589A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBBB07B2BC742480043589A /* Assets.xcassets */; };
 		7CBBB07F2BC742480043589A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBBB07E2BC742480043589A /* Preview Assets.xcassets */; };
+		7CBBB0872BC742790043589A /* cpu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBB0862BC742790043589A /* cpu.swift */; };
+		7CBBB0892BCB3E6B0043589A /* Chip8Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBB0882BCB3E6B0043589A /* Chip8Display.swift */; };
+		7CBBB0902BCB45920043589A /* ibm-logo.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = 7CBBB08F2BCB45920043589A /* ibm-logo.ch8 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		7CBBB0792BC742470043589A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CBBB07B2BC742480043589A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CBBB07E2BC742480043589A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CBBB0862BC742790043589A /* cpu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpu.swift; sourceTree = "<group>"; };
+		7CBBB0882BCB3E6B0043589A /* Chip8Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip8Display.swift; sourceTree = "<group>"; };
+		7CBBB08F2BCB45920043589A /* ibm-logo.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibm-logo.ch8"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +57,10 @@
 		7CBBB0762BC742470043589A /* Chip8Emulator */ = {
 			isa = PBXGroup;
 			children = (
+				7CBBB0882BCB3E6B0043589A /* Chip8Display.swift */,
+				7CBBB0852BC742630043589A /* chip8 */,
 				7CBBB0772BC742470043589A /* Chip8EmulatorApp.swift */,
+				7CBBB08A2BCB416F0043589A /* roms */,
 				7CBBB0792BC742470043589A /* ContentView.swift */,
 				7CBBB07B2BC742480043589A /* Assets.xcassets */,
 				7CBBB07D2BC742480043589A /* Preview Content */,
@@ -65,6 +74,22 @@
 				7CBBB07E2BC742480043589A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CBBB0852BC742630043589A /* chip8 */ = {
+			isa = PBXGroup;
+			children = (
+				7CBBB0862BC742790043589A /* cpu.swift */,
+			);
+			path = chip8;
+			sourceTree = "<group>";
+		};
+		7CBBB08A2BCB416F0043589A /* roms */ = {
+			isa = PBXGroup;
+			children = (
+				7CBBB08F2BCB45920043589A /* ibm-logo.ch8 */,
+			);
+			path = roms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +152,7 @@
 			files = (
 				7CBBB07F2BC742480043589A /* Preview Assets.xcassets in Resources */,
 				7CBBB07C2BC742480043589A /* Assets.xcassets in Resources */,
+				7CBBB0902BCB45920043589A /* ibm-logo.ch8 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBBB0872BC742790043589A /* cpu.swift in Sources */,
 				7CBBB07A2BC742470043589A /* ContentView.swift in Sources */,
 				7CBBB0782BC742470043589A /* Chip8EmulatorApp.swift in Sources */,
+				7CBBB0892BCB3E6B0043589A /* Chip8Display.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
